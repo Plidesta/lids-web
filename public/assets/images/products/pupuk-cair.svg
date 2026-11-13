@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="bgPoc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ecfdf5" />
+      <stop offset="100%" stop-color="#a7f3d0" />
+    </linearGradient>
+    <linearGradient id="bottleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#047857" />
+      <stop offset="50%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#065f46" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bgPoc)" rx="16"/>
+  <!-- Bottle Cap -->
+  <rect x="180" y="55" width="40" height="20" rx="3" fill="#047857"/>
+  <!-- Bottle Neck & Body -->
+  <path d="M185 75 L215 75 L235 110 L235 230 L165 230 L165 110 Z" fill="url(#bottleGrad)" filter="drop-shadow(0 10px 15px rgba(0,0,0,0.15))"/>
+  <!-- Label -->
+  <rect x="165" y="125" width="70" height="75" fill="#ffffff"/>
+  <text x="200" y="145" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#065f46" text-anchor="middle">POC JAMUR</text>
+  <text x="200" y="160" font-family="Arial, sans-serif" font-size="8" fill="#1e293b" text-anchor="middle">Nutrisi Alami</text>
+  <text x="200" y="178" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#059669" text-anchor="middle">500 ML</text>
+  <circle cx="200" cy="192" r="4" fill="#059669"/>
+</svg>

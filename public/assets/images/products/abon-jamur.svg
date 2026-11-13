@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="bgAbon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb" />
+      <stop offset="100%" stop-color="#fef3c7" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bgAbon)" rx="16"/>
+  <!-- Jar -->
+  <rect x="135" y="60" width="130" height="25" rx="6" fill="#b45309" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.1))"/>
+  <rect x="145" y="85" width="110" height="145" rx="16" fill="#fef08a" opacity="0.8" stroke="#d97706" stroke-width="3"/>
+  <rect x="148" y="115" width="104" height="75" rx="6" fill="#ffffff"/>
+  <text x="200" y="138" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#78350f" text-anchor="middle">ABON JAMUR</text>
+  <text x="200" y="154" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#ca8a04" text-anchor="middle">TIRAM GURIH</text>
+  <text x="200" y="172" font-family="Arial, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">Toples Netto 100g</text>
+</svg>

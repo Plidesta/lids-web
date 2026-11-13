@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="bgNugget" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ecfdf5" />
+      <stop offset="100%" stop-color="#d1fae5" />
+    </linearGradient>
+    <linearGradient id="boxNugget" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#064e3b" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bgNugget)" rx="16"/>
+  <!-- Frozen Box -->
+  <rect x="110" y="70" width="180" height="160" rx="12" fill="url(#boxNugget)" filter="drop-shadow(0 10px 15px rgba(0,0,0,0.15))"/>
+  <rect x="125" y="85" width="150" height="85" rx="6" fill="#ffffff"/>
+  <text x="200" y="112" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#065f46" text-anchor="middle">NUGGET SEHAT</text>
+  <text x="200" y="128" font-family="Arial, sans-serif" font-size="10" fill="#047857" text-anchor="middle">100% Jamur Tiram Organik</text>
+  <!-- Nugget items preview -->
+  <rect x="145" y="138" width="22" height="16" rx="4" fill="#f59e0b"/>
+  <rect x="175" y="138" width="22" height="16" rx="4" fill="#f59e0b"/>
+  <rect x="205" y="138" width="22" height="16" rx="4" fill="#f59e0b"/>
+  <rect x="235" y="138" width="22" height="16" rx="4" fill="#f59e0b"/>
+  <text x="200" y="195" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#a7f3d0" text-anchor="middle">FROZEN PACK • 250G</text>
+  <text x="200" y="215" font-family="Arial, sans-serif" font-size="9" fill="#ffffff" text-anchor="middle">Kaya Serat & Tanpa MSG</text>
+</svg>

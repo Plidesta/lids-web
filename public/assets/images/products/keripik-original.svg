@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="bgOrig" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef3c7" />
+      <stop offset="100%" stop-color="#fde68a" />
+    </linearGradient>
+    <linearGradient id="pouchOrig" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#92400e" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bgOrig)" rx="16"/>
+  <!-- Pouch Stand-up -->
+  <path d="M130 60 L270 60 L285 240 L115 240 Z" fill="url(#pouchOrig)" filter="drop-shadow(0 10px 15px rgba(0,0,0,0.15))"/>
+  <rect x="135" y="75" width="130" height="15" rx="4" fill="#78350f"/>
+  <rect x="140" y="110" width="120" height="90" rx="8" fill="#ffffff" opacity="0.95"/>
+  <text x="200" y="135" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#78350f" text-anchor="middle">KERIPIK JAMUR</text>
+  <text x="200" y="152" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d" text-anchor="middle">ORIGINAL GURIH</text>
+  <circle cx="200" cy="175" r="14" fill="#fef08a"/>
+  <text x="200" y="180" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">🍄</text>
+  <text x="200" y="222" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" text-anchor="middle" letter-spacing="1">UNSULBAR BERDAMPAK</text>
+  <!-- Crisps accents -->
+  <circle cx="85" cy="220" r="18" fill="#f59e0b" opacity="0.8"/>
+  <circle cx="315" cy="210" r="16" fill="#fbbf24" opacity="0.8"/>
+  <circle cx="330" cy="235" r="12" fill="#d97706" opacity="0.7"/>
+</svg>

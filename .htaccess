@@ -1,0 +1,28 @@
+# .htaccess - Root Apache / cPanel / LiteSpeed Configuration
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Cegah akses langsung ke file sensitif
+    <FilesMatch "\.(sqlite|env|sql|log|md|json)$">
+        Order allow,deny
+        Deny from all
+    </FilesMatch>
+
+    # Lindungi folder internal dari akses web langsung
+    RewriteRule ^app/ - [F,L]
+    RewriteRule ^database/ - [F,L]
+
+    # Alihkan request ke direktori public/ jika DocumentRoot berada di root folder
+    RewriteCond %{REQUEST_URI} !^/public/
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ public/$1 [L]
+
+    RewriteRule ^$ public/ [L]
+</IfModule>
+
+# Matikan directory browsing untuk keamanan
+Options -Indexes
+
+# Set default charset
+AddDefaultCharset UTF-8

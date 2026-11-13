@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="bgBaglog" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0fdf4" />
+      <stop offset="100%" stop-color="#dcfce7" />
+    </linearGradient>
+    <linearGradient id="cylinderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e2e8f0" />
+      <stop offset="50%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#cbd5e1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bgBaglog)" rx="16"/>
+  <!-- Baglog Cylinder -->
+  <ellipse cx="200" cy="85" rx="45" ry="15" fill="#94a3b8"/>
+  <rect x="155" y="85" width="90" height="135" fill="url(#cylinderGrad)" stroke="#94a3b8" stroke-width="2"/>
+  <ellipse cx="200" cy="220" rx="45" ry="15" fill="#cbd5e1"/>
+  <!-- Ring neck -->
+  <rect x="180" y="65" width="40" height="20" rx="4" fill="#3b82f6"/>
+  <ellipse cx="200" cy="65" rx="20" ry="7" fill="#60a5fa"/>
+  <!-- Growing Oyster Mushrooms sprouting out -->
+  <path d="M210 65 Q250 50 255 35 Q235 30 205 60 Z" fill="#ffffff" stroke="#cbd5e1"/>
+  <path d="M205 65 Q240 70 260 65 Q245 80 205 70 Z" fill="#f8fafc" stroke="#cbd5e1"/>
+  <!-- Label wrap -->
+  <rect x="155" y="125" width="90" height="45" fill="#15803d" opacity="0.9"/>
+  <text x="200" y="142" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">BAGLOG DIY</text>
+  <text x="200" y="157" font-family="Arial, sans-serif" font-size="8" fill="#bbf7d0" text-anchor="middle">Tinggal Semprot Air</text>
+</svg>

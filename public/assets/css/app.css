@@ -1,0 +1,169 @@
+/* public/assets/css/app.css */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --unsulbar-maroon: #7b1113;
+  --unsulbar-maroon-dark: #5a0c0e;
+  --unsulbar-gold: #eab308;
+  --unsulbar-gold-hover: #ca8a04;
+  --organic-green: #10b981;
+  --organic-green-dark: #059669;
+  --organic-emerald: #064e3b;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Custom Interactive Hover Effects */
+.interactive-card {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease;
+}
+
+.interactive-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px -6px rgba(123, 17, 19, 0.12), 0 8px 16px -8px rgba(0, 0, 0, 0.08);
+}
+
+.dark .interactive-card:hover {
+  box-shadow: 0 12px 24px -6px rgba(0, 0, 0, 0.4), 0 8px 16px -8px rgba(234, 179, 8, 0.15);
+}
+
+.interactive-btn {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.interactive-btn:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.08);
+}
+
+.interactive-btn:active {
+  transform: translateY(1px);
+  filter: brightness(0.95);
+}
+
+/* Toast Animations */
+@keyframes toastSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes toastSlideOut {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+}
+
+.toast-enter {
+  animation: toastSlideIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.toast-exit {
+  animation: toastSlideOut 0.25s ease-in forwards;
+}
+
+/* Modern Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Scrollbar Helper Utilities */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 9999px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 9999px;
+}
+.dark .custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #475569;
+}
+
+/* Cetak Struk Rapi & Tidak Terpotong (Print Rules) */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #1e293b !important;
+  }
+  header, nav, footer, #theme-toggle, .interactive-btn, button, [data-close-auth] {
+    display: none !important;
+  }
+  #order-success-modal {
+    position: static !important;
+    display: block !important;
+    background: none !important;
+    padding: 0 !important;
+    overflow: visible !important;
+  }
+  #order-success-modal > div, #order-success-modal .relative {
+    border: none !important;
+    box-shadow: none !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #ffffff !important;
+  }
+  #order-success-modal .bg-gradient-to-r, #modal-proof-section, #modal-qris-container, #order-success-modal .p-4.rounded-2xl.bg-emerald-50, #order-success-modal .grid.grid-cols-1, #order-success-modal .grid.grid-cols-2 {
+    display: none !important;
+  }
+  #modal-invoice-printable {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 16px !important;
+    border: 1px dashed #64748b !important;
+    background: #ffffff !important;
+    color: #0f172a !important;
+    box-shadow: none !important;
+    page-break-inside: avoid;
+  }
+  #modal-invoice-printable * {
+    color: #0f172a !important;
+    background: transparent !important;
+  }
+  #modal-order-items {
+    max-height: none !important;
+    overflow: visible !important;
+  }
+}

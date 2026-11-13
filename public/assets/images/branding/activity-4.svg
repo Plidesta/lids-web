@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+      <defs>
+        <linearGradient id="actGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#1e40af" />
+          <stop offset="100%" stop-color="#2563eb" />
+        </linearGradient>
+      </defs>
+      <rect width="600" height="400" fill="url(#actGrad4)" rx="16"/>
+      <circle cx="300" cy="180" r="85" fill="#ffffff" opacity="0.15"/>
+      <text x="300" y="195" font-family="Arial, sans-serif" font-size="64" text-anchor="middle">🤝</text>
+      <rect x="80" y="290" width="440" height="60" rx="10" fill="#000000" opacity="0.35"/>
+      <text x="300" y="325" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="1">EDUKASI PETANI MAJENE</text>
+      <text x="300" y="342" font-family="Arial, sans-serif" font-size="12" fill="#e2e8f0" text-anchor="middle">Inovasi Mahasiswa Unsulbar Berdampak</text>
+    </svg>

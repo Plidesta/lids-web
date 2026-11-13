@@ -1,0 +1,17 @@
+# public/.htaccess - Public Front Controller Rewriting
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Jika file atau folder fisik ada (CSS, JS, gambar), sajikan langsung
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # Jika tidak ada, arahkan semua ke front controller index.php
+    RewriteRule ^(.*)$ index.php [QSA,L]
+</IfModule>
+
+# Matikan index direktori
+Options -Indexes
+
+# Set UTF-8
+AddDefaultCharset UTF-8

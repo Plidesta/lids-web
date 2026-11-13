@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="bgKompos" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fefce8" />
+      <stop offset="100%" stop-color="#fef08a" />
+    </linearGradient>
+    <linearGradient id="sackGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#78350f" />
+      <stop offset="100%" stop-color="#451a03" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bgKompos)" rx="16"/>
+  <!-- Karung Kompos -->
+  <path d="M125 70 L275 70 L290 235 L110 235 Z" fill="url(#sackGrad)" filter="drop-shadow(0 10px 15px rgba(0,0,0,0.2))"/>
+  <rect x="135" y="70" width="130" height="12" rx="3" fill="#a16207"/>
+  <!-- Badge Label -->
+  <rect x="140" y="105" width="120" height="95" rx="8" fill="#ffffff"/>
+  <circle cx="200" cy="135" r="18" fill="#15803d"/>
+  <text x="200" y="142" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#ffffff">🌱</text>
+  <text x="200" y="168" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">PUPUK KOMPOS</text>
+  <text x="200" y="182" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#15803d" text-anchor="middle">LIMBAH JAMUR 5KG</text>
+  <text x="200" y="222" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#fde047" text-anchor="middle">100% ORGANIK HAYATI</text>
+</svg>
